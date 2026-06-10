@@ -13,32 +13,32 @@
 ## 3. Skeemid, joonised ja fotod
 !<img width="4032" height="3024" alt="IMG_3701" src="https://github.com/user-attachments/assets/b0b29936-f48e-4050-9035-48f94327bdaa" />
 
-```skeem
+```text
 [ AKU / TOIDE ] ──(+/-)──> [ MOTOR SHIELD (Vin / GND klemmid) ]
 
                             ┌────────────────────────┐
                             │  ARDUINO MOTOR SHIELD  │
-[ VASAK MOOTOR ] ◄──(+/-)───┤  Kruviklemm A          │
+[ PAREM MOOTOR ] ◄──(+/-)───┤  Kruviklemm A          │
                             │                        │
-[ PAREM MOOTOR ] ◄──(+/-)───┤  Kruviklemm B          │
+[ VASAK MOOTOR ] ◄──(+/-)───┤  Kruviklemm B          │
                             └───────┬────────┬───────┘
                                     │        │ (Shield istub Arduino otsas)
                             ┌───────┴────────┴───────┐
                             │      ARDUINO UNO       │
-                            └─┬─┬─┬─┬──────┬─┬─┬─┬───┘
-                              │ │ │ │      │ │ │ │
-      ┌───────────────────────┘ │ │ │      │ │ │ └───────────────────────┐
-      │     ┌───────────────────┘ │ │      │ │ └───────────────────┐     │
-      │     │     ┌───────────────┘ │      │ └───────────────┐     │     │
-      │     │     │     ┌───────────┘      └───────────┐     │     │     │
-    (5V)  (GND) (Pin 5)(Pin 6)                       (Pin 7)(Pin 4)(5V)  (GND)
-      │     │     │     │                              │     │     │     │
-      ▼     ▼     ▼     ▼                              ▼     ▼     ▼     ▼
-    (VCC) (GND) (CH3) (CH1)                          (Trig)(Echo)(VCC) (GND)
-┌───────────────────────────┐                      ┌───────────────────────┐
-│     FLYSKY VASTUVÕTJA     │                      │ HC-SR04 ULTRAHELI     │
-│  (Signaal on ülemine rida)│                      │        SENSOR         │
-└───────────────────────────┘                      └───────────────────────┘
+                            └─┬─┬─┬─┬────────────────┘
+                              │ │ │ │  
+      ┌───────────────────────┘ │ │ └──────────┐
+      │     ┌───────────────────┘ │            │
+      │     │     ┌───────────────┘            │
+      │     │     │                            │
+    (5V)  (GND) (Pin 5)                      (Pin 6)
+      │     │     │                            │
+      ▼     ▼     ▼                            ▼
+    (VCC) (GND) (CH3)                        (CH1)
+┌──────────────────────────────────────────────────┐
+│                FLYSKY VASTUVÕTJA                 │
+│           (Signaal on ülemine rida)              │
+└──────────────────────────────────────────────────┘
 
 !video: 
 
