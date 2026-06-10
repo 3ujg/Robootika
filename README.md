@@ -42,7 +42,8 @@
 
 !video: 
 
-https://github.com/user-attachments/assets/672e7fe4-ce68-46c6-88b1-11b9b56ffd5a
+Robot auto
+https://youtube.com/shorts/3E_-Qhqxjcw?feature=share
 
 
 
